@@ -438,7 +438,7 @@
 .services__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 @media screen and (max-width: 960px) { 
@@ -554,11 +554,13 @@
     cursor: pointer;
 }
 
+/*
 .staff__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
-    cursor: pointer;
+    /*cursor: pointer;
 }
+*/
 
 @media screen and (max-width: 960px) { 
     .staff { 
@@ -583,6 +585,206 @@
     .staff__card {
         width: 300px;
     }
+}
+
+/*Games Section CSS*/
+.games {
+    background: #141414; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.games h1 { 
+    background-color: #04a119;
+    background-image: linear-gradient(
+    to right, 
+    #1eff00 0%,
+    #2ee600 0%,
+    #00d300 21%,
+    #06ac00 52%,
+    #00aa09 78%,
+    #007400
+    );
+    background-size: 100%;
+    margin-bottom: 5rem; 
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.games__container { 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.games__card { 
+    margin: 1rem; 
+    height: 525px; 
+    width: 400px;
+    border-radius: 4px; 
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17, 17, 17, 0.6) 100%
+        ),
+         url('images/Invaders.PNG');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.games__card__asteroids { 
+    margin: 1rem; 
+    height: 525px; 
+    width: 400px;
+    border-radius: 4px; 
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17, 17, 17, 0.6) 100%
+        ),
+         url('images/asteroidsPiC.PNG');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+
+
+/*
+.staff__card:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0) 0%, 
+        rgba(17, 17, 17, 0.6) 100%
+        ),
+         url('images/Rumble_Card.png');
+}
+*/
+
+.games h2 {
+    position: absolute;
+    top: 450px; 
+    left: 30px;
+}
+
+/*space invaders*/
+.games__card p {
+    position: absolute;
+    top: 490px; 
+    left: 30px;
+}
+
+/*space invaders*/
+.games__card button {
+    color: #fff;
+    padding: 10px 20px; 
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #20da07; 
+    position: absolute;
+    top: 440px; 
+    left: 30px; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*space invaders*/
+.games__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    /*cursor: pointer;*/
+}
+
+/*asteroids*/
+.games__card__asteroids p {
+    position: absolute;
+    top: 490px; 
+    left: 30px;
+}
+
+/*asteroids*/
+.games__card__asteroids button {
+    color: #fff;
+    padding: 10px 20px; 
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #20da07; 
+    position: absolute;
+    top: 440px; 
+    left: 30px; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*asteroids*/
+.games__card__asteroids:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    /*cursor: pointer;*/
+}
+
+@media screen and (max-width: 960px) { 
+    .games { 
+        height: 1600px;
+    }
+
+    .games h1 {
+        font-size: 2rem; 
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max0width: 480px) { 
+    .games { 
+        height: 1400px;
+    }
+
+    .games h1 {
+        font-size: 1.2rem;
+    }
+
+    .games__card {
+        width: 300px;
+    }
+}
+
+/*Space Invaders*/
+@font-face{
+    font-family: "play"; 
+    src: url("Play-regular.ttf");
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+*{
+    padding: 0; 
+    margin: 0; 
+    font-size: 10x; 
+}
+
+html{ 
+    width: 100%; 
+    font-family: "Play"; 
+}
+
+body{
+    width: 100%; 
+    height: 100%; 
+    background-color: #2f3640;
+}
+
+canvas{
+    display: block; 
+    margin: 10vh auto;
+    background-color: #000
 }
 
 /*contact form*/
